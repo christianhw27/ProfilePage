@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANNY CHRISTIAN — CODE NAME: Cehaa</title>
+    <meta name="description" content="Personal portfolio and blog of Danny Christian Hermawan (Cehaa). Persona 5 themed web experience.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Permanent+Marker&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for standard icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="p5-theme">
+
+    <!-- Red Splatter Decor Background Elements -->
+    <div class="bg-splatter bg-splatter-top-right">
+        <img src="image/p5-splatter.png" alt="red splatter">
+    </div>
+    <div class="bg-splatter bg-splatter-bottom-left">
+        <img src="image/p5-splatter2.png" alt="red splatter">
+    </div>
+
+    <!-- MAIN HEADER / NAVBAR -->
+    <header class="p5-navbar">
+        <div class="nav-container">
+            <div class="logo-box">
+                <img src="image/p5-logo-small.png" alt="Phantom Logo" class="p5-header-logo">
+                <span class="logo-text"><span class="brand-danny">DANNY</span> <span class="brand-christian">CHRISTIAN</span></span>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#hero" class="nav-item active"><span class="nav-skew">HOME</span></a>
+                <a href="#about" class="nav-item"><span class="nav-skew">ABOUT</span></a>
+                <a href="#mission-logs" class="nav-item" id="btn-mission-logs-nav"><span class="nav-skew">MISSION LOGS</span></a>
+                <a href="#archives" class="nav-item" id="btn-archives-nav"><span class="nav-skew">ARCHIVES</span></a>
+                <button class="calling-card-btn" id="open-calling-card">
+                    <span class="btn-skew">CALLING CARD</span>
+                </button>
+            </nav>
+        </div>
+        <div class="header-red-bar"></div>
+    </header>
+
+    <!-- HERO SECTION / THREE PHOTOS BANNER -->
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <div class="photo-banner">
+                <div class="photo-col photo-left">
+                    <img src="image/self1-left.jpg" alt="Danny Christian sitting at Lawu Kala Senja">
+                    <div class="photo-overlay"></div>
+                </div>
+                <div class="photo-col photo-center">
+                    <img src="image/self1-center.jpg" alt="Danny Christian checkered shirt">
+                    <div class="photo-overlay"></div>
+                </div>
+                <div class="photo-col photo-right">
+                    <img src="image/self1-right.jpg" alt="Danny Christian night jacket">
+                    <div class="photo-overlay"></div>
+                </div>
+            </div>
+
+            <!-- CODE NAME BANNER OVERLAY -->
+            <div class="codename-badge">
+                <div class="badge-content">
+                    <span class="code-title">CODE NAME:</span>
+                    <span class="code-value">Cehaa</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT GRID -->
+    <main class="main-wrapper" id="about">
+        <div class="p5-grid">
+            
+            <!-- LEFT COLUMN: PLAYER DATA, DIALOGUE, ABILITIES, COOL BADGE -->
+            <aside class="left-col">
+                
+                <!-- PLAYER DATA CARD -->
+                <div class="p5-card player-data-card">
+                    <div class="mask-icon">
+                        <img src="image/p5-mask.png" alt="Phantom Mask">
+                    </div>
+                    <div class="card-header skewed-header">
+                        <h2>PLAYER DATA</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="data-row">
+                            <span class="data-label">REAL NAME</span>
+                            <span class="data-val name-val">Danny Christian Hermawan</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">ARCANA</span>
+                            <span class="data-val arcana-val">The Fool</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">LEVEL</span>
+                            <span class="data-val">21 (Student)</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">LOCATION</span>
+                            <span class="data-val">Ngawi, Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SPEECH / DIALOGUE BOX -->
+                <div class="p5-dialog-box">
+                    <div class="dialog-inner">
+                        <p class="dialog-text">
+                            "Hmm... jadi kau ingin tahu siapa sebenarnya orang ini? Baiklah, bacalah dengan teliti."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ABILITIES CARD -->
+                <div class="p5-card abilities-card">
+                    <div class="card-header skewed-header-red">
+                        <h2>ABILITIES</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="stat-row" data-stat="Knowledge">
+                            <span class="stat-name">Knowledge</span>
+                            <div class="stat-stars">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-whitestar.png" alt="star" class="star empty">
+                            </div>
+                        </div>
+
+                        <div class="stat-row" data-stat="Guts">
+                            <span class="stat-name">Guts</span>
+                            <div class="stat-stars">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-whitestar.png" alt="star" class="star empty">
+                            </div>
+                        </div>
+
+                        <div class="stat-row" data-stat="Charm">
+                            <span class="stat-name">Charm</span>
+                            <div class="stat-stars">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-whitestar.png" alt="star" class="star empty">
+                                <img src="image/p5-whitestar.png" alt="star" class="star empty">
+                            </div>
+                        </div>
+
+                        <div class="stat-row" data-stat="Kindness">
+                            <span class="stat-name">Kindness</span>
+                            <div class="stat-stars">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-whitestar.png" alt="star" class="star empty">
+                            </div>
+                        </div>
+
+                        <div class="stat-row" data-stat="Proficiency">
+                            <span class="stat-name">Proficiency</span>
+                            <div class="stat-stars">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-star.png" alt="star" class="star filled">
+                                <img src="image/p5-whitestar.png" alt="star" class="star empty">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LOOKING COOL BADGE -->
+                <div class="p5-cool-container">
+                    <img src="image/p5-cool.png" alt="LOOKING COOL, DANNY!" class="cool-img">
+                </div>
+
+            </aside>
+
+
+            <!-- RIGHT COLUMN: THE BACKSTORY -->
+            <section class="right-col">
+                <div class="p5-card backstory-card">
+                    <div class="backstory-title-group">
+                        <span class="the-slant">THE</span>
+                        <span class="backstory-slant">BACKSTORY</span>
+                    </div>
+
+                    <div class="backstory-content">
+                        <p class="greeting">Salam Kenal !</p>
+
+                        <p>
+                            Halo, aku <strong>Danny Christian</strong>. Pemuda asal Ngawi yang kebetulan suka main game dan nonton buat ngisi waktu. Sedang menikmati hidup dengan cara makan dan pacaran. Menerima ucapan dan kado pada tanggal <strong>27 Agustus</strong>.
+                        </p>
+
+                        <p>
+                            Kecil dan dibesarkan di kota Ngawi, sebuah kota kecil yang ada di ujung timur jawa timur, berbatasan langsung dengan jawa timur.
+                        </p>
+
+                        <p>
+                            Aku mengambil jurusan Informatika di <strong>Universitas Negeri Surabaya</strong>, kampusnya memang bukan yang aku inginkan tapi jurusannya sudah menjadi keinginanku dari lama.
+                        </p>
+
+                        <p class="highlight-q">kenapa?</p>
+
+                        <p>
+                            Aku pingin bisa buat aplikasi atau website yang bisa bermanfaat bagi orang lain, karena kan zaman semakin maju dan semua yang mulanya tradisional sedikit demi sedikit bergeser ke arah digital. Yah meskipun ditengah gempuran AI, orang awam bisa buat website sendiri tanpa tahu fundamental, tapi dengan aku kuliah dan terus belajar, aku yakin ini bisa meningkatkan value dan kualitasku.
+                        </p>
+
+                        <p class="highlight-q">Lalu...</p>
+
+                        <p>
+                            Aku juga suka banget main game tapi bukan game mobile yang kompetitif, melainkan game PC yang punya cerita dan dunia bagus. Salah satunya <strong>Persona</strong> yang jadi ide dasar pembuatan website ini. Bagi ku game kompetitif itu gak bisa bikin santai karena orientasinya adalah <em>Kemenangan, Victory, Winner</em>. Sedangkan game-game seperti <em>RDR2</em>, Seri <em>Assassin's Creed</em>, atau Seri <em>Final Fantasy</em>, fokusnya adalah cerita dan eksplorasi serta reward dari setiap misi, tidak ada kalah atau menang, tapi <strong>TAMAT</strong>.
+                        </p>
+
+                        <p>
+                            Aku juga suka nonton series atau film detektif, terutama <strong>Sherlock Holmes</strong>. Jujur senang banget kalo ada series atau film lain yang mengusung tema misteri dengan karakter detektif jenius. Aku juga suka Anime, dulu pernah nonton anime dari pagi ke pagi, tapi itu waktu sekolah. Kalau ditanya animee favoritku apa, mungkin <strong>Violet Evergarden</strong>, sebuah anime yang isinya bawang semua dari awal sampai akhir.
+                        </p>
+
+                        <p>
+                            Terimakasih sudah membaca hingga akhir, sebenernya terlepas dari ini saya juga punya blog pribadi dengan konsep dan tema yang sama, dan bisa di lihat <a href="https://danny-phantom-site.vercel.app/" target="_blank" rel="noopener noreferrer" class="p5-link">disini</a>.
+                        </p>
+                    </div>
+
+                    <!-- ACTION BUTTONS -->
+                    <div class="backstory-actions">
+                        <button class="p5-btn btn-white" id="btn-read-logs">
+                            <span>READ LOGS</span>
+                        </button>
+                        <button class="p5-btn btn-black" id="btn-send-card">
+                            <span>SEND CARD</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- FLOATING P5 AMBUSH / SOUND CONTROLLER -->
+    <div class="floating-p5-controls">
+        <button id="bgm-toggle" class="sound-btn" title="Toggle Persona 5 Music">
+            <img src="image/p5-music.png" alt="Music player icon">
+            <span class="sound-label">P5 SOUNDTRACK</span>
+        </button>
+    </div>
+
+    <!-- CALLING CARD MODAL -->
+    <div class="p5-modal-backdrop" id="calling-card-modal">
+        <div class="p5-modal-content calling-card-wrapper">
+            <button class="modal-close" id="close-calling-card">&times;</button>
+            <div class="calling-card-inner">
+                <div class="calling-card-header">
+                    <img src="image/p5-logo-small.png" alt="Phantom Logo" class="modal-logo">
+                    <h2>TAKE YOUR HEART</h2>
+                    <p class="modal-subtitle">A CALLING CARD TO DANNY CHRISTIAN</p>
+                </div>
+                
+                <form id="calling-card-form" class="calling-form">
+                    <div class="form-group">
+                        <label for="sender-name">SENDER NAME / CODE NAME</label>
+                        <input type="text" id="sender-name" placeholder="Sir/Madam Phantom Thief" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sender-email">EMAIL ADDRESS</label>
+                        <input type="email" id="sender-email" placeholder="your.email@phantom.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sender-msg">DESIRE / MESSAGE TO STEAL</label>
+                        <textarea id="sender-msg" rows="4" placeholder="Sir Danny Christian, your hidden talents are hereby acknowledged..." required></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="p5-btn btn-red">
+                            <span>TRANSMIT CARD</span>
+                        </button>
+                    </div>
+                </form>
+                <div id="calling-card-success" class="card-success-msg hidden">
+                    <img src="image/p5-ambush.png" alt="Ambush!" class="ambush-img">
+                    <h3>TARGET CONFIRMED!</h3>
+                    <p>Your Calling Card has been delivered successfully. Expect a response soon!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MISSION LOGS / ARCHIVES GALLERY MODAL -->
+    <div class="p5-modal-backdrop" id="mission-logs-modal">
+        <div class="p5-modal-content logs-wrapper">
+            <button class="modal-close" id="close-mission-logs">&times;</button>
+            <div class="logs-header">
+                <h2>MISSION LOGS & MEMORIES</h2>
+                <span class="sub-tag">OPERATION ARCHIVES // NGAWI & SURABAYA</span>
+            </div>
+            
+            <div class="logs-gallery">
+                <div class="gallery-item">
+                    <img src="image/memories/1712200054182.jpg" alt="Memory Photo 1" loading="lazy">
+                    <div class="item-tag">LOG #01</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/memories/IMG-20260106-WA0053.jpg" alt="Memory Photo 2" loading="lazy">
+                    <div class="item-tag">LOG #02</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/memories/IMG-20260125-WA0043.jpg" alt="Memory Photo 3" loading="lazy">
+                    <div class="item-tag">LOG #03</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/memories/IMG-20260126-WA0058.jpg" alt="Memory Photo 4" loading="lazy">
+                    <div class="item-tag">LOG #04</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/memories/IMG_0019_20251231_110426.jpeg" alt="Memory Photo 5" loading="lazy">
+                    <div class="item-tag">LOG #05</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/memories/IMG_20230904_20384786.jpg" alt="Memory Photo 6" loading="lazy">
+                    <div class="item-tag">LOG #06</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/memories/IMG_20251214_181018544_HDR.jpg" alt="Memory Photo 7" loading="lazy">
+                    <div class="item-tag">LOG #07</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/memories/Polish_20251119_220607136.jpg" alt="Memory Photo 8" loading="lazy">
+                    <div class="item-tag">LOG #08</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="p5-footer">
+        <div class="footer-top-line"></div>
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="image/p5-logo-small.png" alt="P5 Small Logo" class="footer-logo">
+            </div>
+            <div class="footer-center">
+                <p>&copy; 2026 Danny Christian. <span class="tyt-text">Take Your Time.</span></p>
+                <img src="image/p5-take-your-time.png" alt="Take Your Time" class="tyt-icon">
+            </div>
+            <div class="footer-right">
+                <img src="image/p5-icon.png" alt="Phantom Icon" class="footer-phantom-icon">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Audio BGM (Persona 5 style background music stream) -->
+    <audio id="p5-bgm" loop preload="none">
+        <source src="https://ia801509.us.archive.org/21/items/persona-5-ost/1-02%20Phantom.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
